@@ -1,0 +1,12 @@
+{
+  "looks": "data/looks.tsv",
+  "root": "Creature\\RetailLibrary",
+  "first_display": 200000,
+  "first_model": 200000,
+  "transmog": false,
+  "plain": true,
+  "prune_textures": true,
+  "archives": {"mount": "patch-z72-retail-library.MPQ", "pet": "patch-z72-retail-library.MPQ"},
+  "template": {"pet": 10990, "mount": 22464},
+  "source": "buildthehomelab/wow-mod-retail-library data/looks.tsv. A look's display id is 200000 + its retail display id."
+}
