@@ -16,6 +16,26 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 LOOKS = os.path.join(HERE, "..", "data", "looks.tsv")
 OFFSET = 200000
+# A model's path in the client is <root>\<Model>\<Model>[_geosets].mdx, and the server's
+# creaturemodeldata_dbc.ModelName holds 100 characters: longer model names are cut to fit.
+ROOT = json.load(open(os.path.join(HERE, "..", "pack.json")))["root"]
+PATH_MAX = 100
+
+
+def model_name(stem, taken):
+    """The look's model name: retail's file name, cut to fit the path, and unique."""
+    def path(name):
+        folder = "".join(p[:1].upper() + p[1:] for p in name.split("_"))
+        return "%s\\%s\\%s_000000.mdx" % (ROOT, folder, folder)
+    name = stem
+    while len(path(name)) > PATH_MAX:
+        name = name[:-1].rstrip("_")
+    base, n = name, 2
+    while taken.get(name, stem) != stem:
+        name = "%s%d" % (base[:len(base) - len(str(n))], n)
+        n += 1
+    taken[name] = stem
+    return name
 
 
 def main():
@@ -42,6 +62,9 @@ def main():
             look["form"] = "mount"  # a look both a mount and a pet wear is kept with the mounts
         if name not in look["names"]:
             look["names"].append(name)
+    taken = {}
+    for look in looks.values():
+        look["model"] = model_name(look["model"], taken)
     rows = sorted(looks.items(), key=lambda kv: (kv[1]["form"], kv[1]["model"], kv[0]))
     with open(LOOKS, "w", encoding="utf-8", newline="\n") as f:
         f.write("display\tretail_display\tform\ttier\tmodel\tname\n")
