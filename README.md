@@ -26,8 +26,13 @@ pandas).
   catch what crashes or hangs a 3.3.5a client), and each look was drawn from its converted model
   and put next to Blizzard's picture of it. How they move, where a rider sits and how they sound
   has not been looked at.
-- **No particle effects.** The converter drops particles, ribbons and extra texture layers, so a
-  mount that is mostly fire, smoke or sparkle is bare. 124 looks lose a fourth texture layer.
+- **Not every effect.** The models keep their particles, ribbons, lights and most glows and
+  shines (`"effects": true` in [`pack.json`](pack.json), an option of the converter). Left out:
+  - emitters that spawn other models, draw a creature skin slot, or are of a kind 3.3.5a lacks;
+  - a multi-texture emitter's second and third textures (it draws its first);
+  - glows and shines that retail limits to the first texture's alpha (among them a common
+    environment-map shine), which 3.3.5a can't draw as a pass of their own.
+- **No fourth skin texture.** 124 looks use one, and 3.3.5a's display rows have only three.
 - **No sounds and no footprints.** The rows carry none, so that hundreds of unlike models don't
   all growl like the one stock creature they were cloned from. A module that turns a look into a
   mount gives it its sound.
@@ -55,16 +60,16 @@ The module has no code of its own; its SQL
 and model rows, which it checks every creature display against.
 
 Client: two patches, built by the tools below and not stored here. The names are examples; any
-two names work if the small one loads after every other patch that ships the same two tables.
+two names work if the small one loads after every other patch that ships any of the same tables.
 
 | Patch | Holds | Size |
 |---|---|---|
-| `patch-z72-retail-library.MPQ` | the models and textures, under `Creature\RetailLibrary` | 2.3 GB |
-| `patch-z75-retail-looks.MPQ` | `CreatureDisplayInfo.dbc` and `CreatureModelData.dbc` with the looks' rows | under 1 MB |
+| `patch-z72-retail-library.MPQ` | the models and textures, under `Creature\RetailLibrary` | 2.5 GB |
+| `patch-z75-retail-looks.MPQ` | `CreatureDisplayInfo.dbc` and `CreatureModelData.dbc` with the looks' rows, and `ParticleColor.dbc` with their particle colours | under 1 MB |
 
 The split is on purpose. A patch replaces whole files, so the small one has to be rebuilt on the
-client's current two tables whenever another patch adds rows to them, and it has to load after
-every other patch that ships them. The big one never changes for that.
+client's current tables whenever another patch adds rows to them, and it has to load after every
+other patch that ships them. The big one never changes for that.
 
 ## Requirements
 
@@ -88,6 +93,11 @@ python3 tools/inventory.py --census <census dir>
 RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/build_patch.py --pack . --dbc <client dir> --cache ~/retail-cache --work <work dir> --out patch-z75-retail-looks.MPQ --data-dir <out dir> --sql data/sql/db-world/mod_retail_library.sql
 ```
 
+`client_files.py` doesn't copy `ParticleColor.dbc`: put it into `<client dir>` yourself, from the
+last patch that ships one or else the client's own (`Data\enUS\patch-enUS-2.MPQ` in the stock
+client). Without it the build only warns, and the looks whose particles take their colours from
+the display come out the wrong colour, or white.
+
 The build downloads about 5 GB from Blizzard's CDN the first time and takes a quarter of an hour.
 
 ## Removing
@@ -102,6 +112,8 @@ Category: Collections
 - The game client now carries the models of more than three thousand mounts and companions from
   later expansions. None of them can be collected yet: they are there so that new mounts and
   companions can be added without another large download.
+- They come with their **effects**: flames, sparkles, smoke and trails, and glowing eyes and
+  runes.
 
 ## Credits
 
