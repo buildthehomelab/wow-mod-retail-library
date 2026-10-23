@@ -6,6 +6,7 @@
   "transmog": false,
   "plain": true,
   "prune_textures": true,
+  "effects": true,
   "archives": {"mount": "patch-z72-retail-library.MPQ", "pet": "patch-z72-retail-library.MPQ"},
   "template": {"pet": 10990, "mount": 22464},
   "source": "buildthehomelab/wow-mod-retail-library data/looks.tsv. A look's display id is 200000 + its retail display id."
