@@ -17,7 +17,10 @@ pandas).
   display 123098, so it is display 323098 here. An id never moves, and anything that names a
   retail display (Wowhead, wago.tools, Blizzard's API) names ours.
 - [`data/looks.tsv`](data/looks.tsv) lists every look: its display id, retail display id, whether
-  retail uses it for a mount or a pet, the model, and the retail names that wear it.
+  retail uses it for a mount or a pet, the model, and the retail names that wear it. `hide`,
+  set by hand and kept when `tools/inventory.py` rewrites the file, names retail texture file
+  ids a look leaves out with the batches that draw them: the Geargrinder Mk. 11's white streak
+  mesh (7434021), which swings out on a jump and draws as solid white blades in 3.3.5.
 - To see one in game: `.morph 323098` on yourself, or `.npc set model 323098` on a creature.
 
 ## What it is not
