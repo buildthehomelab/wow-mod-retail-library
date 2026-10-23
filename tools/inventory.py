@@ -62,14 +62,25 @@ def main():
             look["form"] = "mount"  # a look both a mount and a pet wear is kept with the mounts
         if name not in look["names"]:
             look["names"].append(name)
+    # hide (retail texture file ids a look leaves out, with their batches) is set by hand: keep it.
+    hide = {}
+    if os.path.exists(LOOKS):
+        lines = open(LOOKS, encoding="utf-8").read().splitlines()
+        head = lines[0].split("\t")
+        if "hide" in head:
+            for line in lines[1:]:
+                row = dict(zip(head, line.split("\t")))
+                if row.get("hide"):
+                    hide[int(row["retail_display"])] = row["hide"]
     taken = {}
     for look in looks.values():
         look["model"] = model_name(look["model"], taken)
     rows = sorted(looks.items(), key=lambda kv: (kv[1]["form"], kv[1]["model"], kv[0]))
     with open(LOOKS, "w", encoding="utf-8", newline="\n") as f:
-        f.write("display\tretail_display\tform\ttier\tmodel\tname\n")
+        f.write("display\tretail_display\tform\ttier\tmodel\tname\thide\n")
         for display, l in rows:
-            f.write("%d\t%d\t%s\t0\t%s\t%s\n" % (OFFSET + display, display, l["form"], l["model"], " / ".join(l["names"])))
+            f.write("%d\t%d\t%s\t0\t%s\t%s\t%s\n" % (OFFSET + display, display, l["form"], l["model"],
+                                                     " / ".join(l["names"]), hide.get(display, "")))
     print("%d looks (%d mount, %d pet) on %d models" % (
         len(rows), sum(1 for _d, l in rows if l["form"] == "mount"), sum(1 for _d, l in rows if l["form"] == "pet"),
         len({l["model"] for _d, l in rows})))
