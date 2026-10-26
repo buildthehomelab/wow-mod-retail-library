@@ -1,10 +1,16 @@
 # Retail Library
 
 The models of the mounts and battle pets of later expansions, converted for the 3.3.5a client of
-an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,147 looks on 1,169 models,
-every retail mount and pet look (retail 12.1.0) that the converter can take and that a 3.3.5a
-client with an HD creature pack doesn't already have. The list was made against such a client;
-the census below makes one against yours.
+an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,267 looks on 1,229 models,
+every retail mount and pet look (retail 12.1.0, and 12.1.5 for the later mounts) that the
+converter can take and that a 3.3.5a client with an HD creature pack doesn't already have. The
+list was made against such a client; the census below makes one against yours.
+
+It also has the looks of 120 retail mounts whose model the client does have (the Swift Albino
+Raptor, the Primal Raptors' new textures on the stock raptor, the dragonriding drakes): the
+client has the model but no mount, so
+[wow-mod-retail-collection](https://github.com/buildthehomelab/wow-mod-retail-collection) asks
+for them by name (its `data/wanted-looks.tsv`), and they are converted from retail like the rest.
 
 This is a library, not a feature. It puts the models in the client and tells the server their
 display ids, and that is all: nothing here is learnable, sold or dropped. A mount or a pet a
@@ -20,7 +26,10 @@ pandas).
   retail uses it for a mount or a pet, the model, and the retail names that wear it. `hide`,
   set by hand and kept when `tools/inventory.py` rewrites the file, names retail texture file
   ids a look leaves out with the batches that draw them: the Geargrinder Mk. 11's white streak
-  mesh (7434021), which swings out on a jump and draws as solid white blades in 3.3.5.
+  mesh (7434021), which swings out on a jump and draws as solid white blades in 3.3.5. `s2`
+  there leaves out what the model draws with its third skin slot, which the look leaves empty:
+  the banner the Kul Tiran saddle horses (Goldenmane, Dapple Gray and others) would otherwise
+  borrow from the Highland Mustang.
 - To see one in game: `.morph 323098` on yourself, or `.npc set model 323098` on a creature.
 
 ## What it is not
@@ -90,11 +99,17 @@ cloned next to this repo:
 ```bash
 # what the client has, and what retail has that it lacks
 python3 ../mod-retail-creatures/tools/client_files.py --client <WoW folder> --out <client dir> [your own patches, in load order]
-RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/census.py --cache ~/retail-cache --client <client dir> --out <census dir> --models
+RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/census.py --cache ~/retail-cache --client <client dir> --out <census dir> --models --effects [--also <wanted looks tsv>]
 # the look list, then the patches and the SQL
-python3 tools/inventory.py --census <census dir>
+python3 tools/inventory.py --census <census dir> [--also <wanted looks tsv>] [--add-only mount]
 RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/build_patch.py --pack . --dbc <client dir> --cache ~/retail-cache --work <work dir> --out patch-z75-retail-looks.MPQ --data-dir <out dir> --sql data/sql/db-world/mod_retail_library.sql
 ```
+
+`--also` takes a tsv with a `retail_display` column (wow-mod-retail-collection's
+`data/wanted-looks.tsv`): those looks are converted although the client has their model. A look
+already in the list stays in it, and keeps its place: the build numbers the models in list order,
+so new looks go at the end and the models before them keep their ids. `--add-only mount` adds
+new mount looks only (new pet looks wait).
 
 `client_files.py` doesn't copy `ParticleColor.dbc`: put it into `<client dir>` yourself, from the
 last patch that ships one or else the client's own (`Data\enUS\patch-enUS-2.MPQ` in the stock
