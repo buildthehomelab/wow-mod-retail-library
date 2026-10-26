@@ -17,6 +17,7 @@ added or dropped later, and anything that knows a retail display knows ours.
 import argparse
 import json
 import os
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LOOKS = os.path.join(HERE, "..", "data", "looks.tsv")
@@ -92,6 +93,12 @@ def main():
         skipped.setdefault("new, not a %s (--add-only)" % args.add_only, set()).add(
             "%s (%d)" % (" / ".join(looks[display]["names"]), display))
         del looks[display]
+    # A look the list has never goes: its model would take the next one's id, and every model
+    # after it would move. A census without --also or --effects can leave one out.
+    gone = sorted(set(had) - set(looks))
+    if gone:
+        sys.exit("%d looks of %s would go (%s): run the census with --effects and the --also files "
+                 "they came from" % (len(gone), LOOKS, ", ".join(map(str, gone[:20]))))
     taken = {}
     for display, look in looks.items():
         if display in had:
