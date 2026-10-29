@@ -10,5 +10,6 @@
   "customization_geosets": true,
   "archives": {"mount": "patch-z72-retail-library.MPQ", "pet": "patch-z72-retail-library.MPQ", "creature": "patch-z72-retail-library.MPQ"},
   "template": {"pet": 10990, "mount": 22464, "creature": 5238},
+  "model_info": {"creature": [2.5, 5]},
   "source": "buildthehomelab/wow-mod-retail-library data/looks.tsv. A look's display id is 200000 + its retail display id."
 }
