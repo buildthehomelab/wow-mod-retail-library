@@ -10,7 +10,10 @@ client: its displays.tsv lists every look, its models.json what the converter ma
 wow-mod-retail-collection's data/wanted-looks.tsv: those looks are converted too although the
 client has their model (a mount the client lacks, on a model it has) or it is no creature
 model. Pass the same files to the census's --also, so their models are probed.
---add-only mount (or pet) adds new looks of that kind only; the looks already in the list stay.
+A look there that no retail mount or pet wears (a creature's, listed by the census as kind
+"creature") comes in with form creature.
+--add-only mount (or pet) adds new looks of that kind only; the looks already in the list stay,
+and so do creature looks, which only --also brings in.
 A look's 3.3.5 display id is 200000 + its retail display id, so it never moves, whatever is
 added or dropped later, and anything that knows a retail display knows ours.
 """
@@ -89,7 +92,8 @@ def main():
             look["form"] = "mount"  # a look both a mount and a pet wear is kept with the mounts
         if name not in look["names"]:
             look["names"].append(name)
-    for display in [d for d, l in looks.items() if args.add_only and d not in had and l["form"] != args.add_only]:
+    for display in [d for d, l in looks.items()
+                    if args.add_only and d not in had and l["form"] not in (args.add_only, "creature")]:
         skipped.setdefault("new, not a %s (--add-only)" % args.add_only, set()).add(
             "%s (%d)" % (" / ".join(looks[display]["names"]), display))
         del looks[display]
@@ -117,9 +121,9 @@ def main():
         for display, l in rows:
             f.write("%d\t%d\t%s\t0\t%s\t%s\t%s\n" % (OFFSET + display, display, l["form"], l["model"],
                                                      " / ".join(l["names"]), hide.get(display, "")))
-    print("%d looks (%d mount, %d pet) on %d models" % (
+    print("%d looks (%d mount, %d pet, %d creature) on %d models" % (
         len(rows), sum(1 for _d, l in rows if l["form"] == "mount"), sum(1 for _d, l in rows if l["form"] == "pet"),
-        len({l["model"] for _d, l in rows})))
+        sum(1 for _d, l in rows if l["form"] == "creature"), len({l["model"] for _d, l in rows})))
     for result, names in sorted(skipped.items()):
         print("left out, %s: %s" % (result, ", ".join(sorted(names))))
 

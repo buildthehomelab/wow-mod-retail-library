@@ -3269,8 +3269,13 @@ INSERT INTO `creaturedisplayinfo_dbc` (`ID`, `ModelID`, `SoundID`, `ExtendedDisp
 (205050, 201299, 0, 0, 1, 255, 'T126305', '', '', '', 1, 0, 0, 0, 0, 0),
 (272020, 201300, 0, 0, 1.1, 255, '', '', '', '', 1, 0, 0, 0, 0, 0),
 (263580, 201301, 0, 0, 0.6, 255, 'T1120158', '', '', '', 1, 0, 0, 0, 0, 0),
-(283649, 201302, 0, 0, 1, 255, 'T1886751', '', '', '', 1, 0, 0, 0, 0, 0);
-DELETE FROM `creaturemodeldata_dbc` WHERE `ID` BETWEEN 200000 AND 201302;
+(283649, 201302, 0, 0, 1, 255, 'T1886751', '', '', '', 1, 0, 0, 0, 0, 0),
+(247249, 201303, 0, 0, 1.5, 255, 'T667401', '', '', '', -1, 0, 0, 0, 0, 0),
+(247271, 201303, 0, 0, 1.5, 255, 'T667399', '', '', '', -1, 0, 0, 0, 0, 0),
+(247272, 201303, 0, 0, 1.5, 255, 'T667402', '', '', '', -1, 0, 0, 0, 0, 0),
+(247273, 201303, 0, 0, 1.5, 255, 'T667403', '', '', '', -1, 0, 0, 0, 0, 0),
+(276972, 201303, 0, 0, 1.5, 255, 'T667400', '', '', '', -1, 0, 0, 0, 0, 0);
+DELETE FROM `creaturemodeldata_dbc` WHERE `ID` BETWEEN 200000 AND 201303;
 INSERT INTO `creaturemodeldata_dbc` (`ID`, `Flags`, `ModelName`, `SizeClass`, `ModelScale`, `BloodID`, `FootprintTextureID`, `FootprintTextureLength`, `FootprintTextureWidth`, `FootprintParticleScale`, `FoleyMaterialID`, `FootstepShakeSize`, `DeathThudShakeSize`, `SoundID`, `CollisionWidth`, `CollisionHeight`, `MountHeight`, `GeoBoxMinX`, `GeoBoxMinY`, `GeoBoxMinZ`, `GeoBoxMaxX`, `GeoBoxMaxY`, `GeoBoxMaxZ`, `WorldEffectScale`, `AttachedEffectScale`, `MissileCollisionRadius`, `MissileCollisionPush`, `MissileCollisionRaise`) VALUES
 (200000, 0, 'Creature\\RetailLibrary\\30thbatmount\\30thbatmount.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 1.43742, -2.752, -6.72362, -0.337964, 4.09129, 6.75841, 9.38622, 1, 1, 0, 0, 0),
 (200001, 0, 'Creature\\RetailLibrary\\30thgryphonmount\\30thgryphonmount.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 1.7446, -3.46599, -1.5375, -0.0519845, 2.496, 1.22359, 2.83267, 1, 1, 0, 0, 0),
@@ -4574,7 +4579,8 @@ INSERT INTO `creaturemodeldata_dbc` (`ID`, `Flags`, `ModelName`, `SizeClass`, `M
 (201299, 0, 'Creature\\RetailLibrary\\Undeadhorse\\Undeadhorse.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 2.02595, -1.63638, -0.462955, -0.0342539, 1.8563, 0.462889, 2.5798, 1, 1, 0, 0, 0),
 (201300, 0, 'Creature\\RetailLibrary\\Viciouswarelekk\\Viciouswarelekk.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 3.22391, -2.65557, -3.7132, -0.659903, 3.84285, 2.77266, 5.61116, 1, 1, 0, 0, 0),
 (201301, 0, 'Creature\\RetailLibrary\\Viciouswarkodo\\Viciouswarkodo.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 3.7789, -8.31123, -3.1758, -0.171302, 4.25762, 3.04982, 9.21324, 1, 1, 0, 0, 0),
-(201302, 0, 'Creature\\RetailLibrary\\Zandalariraptor\\Zandalariraptor.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 2.56067, -4.76372, -1.8805, -0.0669009, 1.8266, 2.06672, 3.24626, 1, 1, 0, 0, 0);
+(201302, 0, 'Creature\\RetailLibrary\\Zandalariraptor\\Zandalariraptor.mdx', 1, 1, -1, 0, 18, 12, 2, 0, 0, 0, 0, 0.611111, 2.03128, 2.56067, -4.76372, -1.8805, -0.0669009, 1.8266, 2.06672, 3.24626, 1, 1, 0, 0, 0),
+(201303, 0, 'Creature\\RetailLibrary\\Zandalaridevilsaur\\Zandalaridevilsaur.mdx', 2, 1, 3, 0, 12, 18, 1, 0, 0, 0, 0, 0.611111, 2.03128, 0, -9.48068, -2.40129, -0.0927337, 4.33233, 2.39013, 7.026, 1, 1, 0, 0, 0);
 DELETE FROM `creature_model_info` WHERE `DisplayID` BETWEEN 200134 AND 347674;
 INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`, `Gender`, `DisplayID_Other_Gender`) VALUES
 (323104, 1, 1.5, 2, 0),
@@ -7843,4 +7849,9 @@ INSERT INTO `creature_model_info` (`DisplayID`, `BoundingRadius`, `CombatReach`,
 (205050, 1, 1.5, 2, 0),
 (272020, 1, 1.5, 2, 0),
 (263580, 1, 1.5, 2, 0),
-(283649, 1, 1.5, 2, 0);
+(283649, 1, 1.5, 2, 0),
+(247249, 2.5, 5, 2, 0),
+(247271, 2.5, 5, 2, 0),
+(247272, 2.5, 5, 2, 0),
+(247273, 2.5, 5, 2, 0),
+(276972, 2.5, 5, 2, 0);
