@@ -1,10 +1,11 @@
 # Retail Library
 
 The models of the mounts and battle pets of later expansions, converted for the 3.3.5a client of
-an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,267 looks on 1,229 models,
+an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,272 looks on 1,230 models,
 every retail mount and pet look (retail 12.1.0, and 12.1.5 for the later mounts) that the
-converter can take and that a 3.3.5a client with an HD creature pack doesn't already have. The
-list was made against such a client; the census below makes one against yours.
+converter can take and that a 3.3.5a client with an HD creature pack doesn't already have, and a
+few plain creature looks asked for by name (the five Primal Devilsaurs). The list was made
+against such a client; the census below makes one against yours.
 
 It also has the looks of 120 retail mounts whose model the client does have (the Swift Albino
 Raptor, the Primal Raptors' new textures on the stock raptor, the dragonriding drakes): the
@@ -99,9 +100,9 @@ cloned next to this repo:
 ```bash
 # what the client has, and what retail has that it lacks
 python3 ../mod-retail-creatures/tools/client_files.py --client <WoW folder> --out <client dir> [your own patches, in load order]
-RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/census.py --cache ~/retail-cache --client <client dir> --out <census dir> --models --effects [--also <wanted looks tsv>]
+RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/census.py --cache ~/retail-cache --client <client dir> --out <census dir> --models --effects --also data/looks.tsv --also data/extra-looks.tsv [--also <wanted looks tsv>]
 # the look list, then the patches and the SQL
-python3 tools/inventory.py --census <census dir> [--also <wanted looks tsv>] [--add-only mount]
+python3 tools/inventory.py --census <census dir> --also data/extra-looks.tsv [--also <wanted looks tsv>] [--add-only mount]
 RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/build_patch.py --pack . --dbc <client dir> --cache ~/retail-cache --work <work dir> --out patch-z75-retail-looks.MPQ --data-dir <out dir> --sql data/sql/db-world/mod_retail_library.sql
 ```
 
@@ -110,6 +111,15 @@ RETAIL_SOURCE=cdn python3 ../mod-retail-creatures/tools/build_patch.py --pack . 
 already in the list stays in it, and keeps its place: the build numbers the models in list order,
 so new looks go at the end and the models before them keep their ids. `--add-only mount` adds
 new mount looks only (new pet looks wait).
+
+A look no retail mount or pet wears (a plain creature's, for a module's own creature) is asked
+for the same way: [`data/extra-looks.tsv`](data/extra-looks.tsv) lists them by `retail_display`
+with a `name`, and goes to both `--also`s. The census lists such a display as kind `creature`, and
+the inventory keeps it with form `creature` (`--add-only` doesn't hold it back); `pack.json`'s
+`template` gives those rows the stock devilsaur's blood and size class. It has the five Primal
+Devilsaur stripes now (displays 247249, 247271, 247272, 247273 and 276972). The census also takes
+`--also data/looks.tsv`, which probes every look the list already has, so none of them goes once
+the wish list that brought it in is empty.
 
 `client_files.py` doesn't copy `ParticleColor.dbc`: put it into `<client dir>` yourself, from the
 last patch that ships one or else the client's own (`Data\enUS\patch-enUS-2.MPQ` in the stock
