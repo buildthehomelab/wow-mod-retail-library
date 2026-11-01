@@ -81,7 +81,7 @@ two names work if the small one loads after every other patch that ships any of 
 |---|---|---|
 | `patch-z72-retail-library.MPQ` | the models and textures, under `Creature\RetailLibrary` | 2.5 GB |
 | `patch-z75-retail-looks.MPQ` | `CreatureDisplayInfo.dbc` and `CreatureModelData.dbc` with the looks' rows, and `ParticleColor.dbc` with their particle colours | under 1 MB |
-| `patch-z76-look-sounds.MPQ` | the looks' retail sound files and `CreatureSoundData.dbc` (from `look_sounds.py`) | 358 MB |
+| `patch-z76-look-sounds.MPQ` | the looks' retail sound files and `CreatureSoundData.dbc` (from `look_sounds.py`) | 359 MB |
 
 The split is on purpose. A patch replaces whole files, so the small one has to be rebuilt on the
 client's current tables whenever another patch adds rows to them, and it has to load after every
