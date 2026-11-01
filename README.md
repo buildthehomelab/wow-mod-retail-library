@@ -1,15 +1,15 @@
 # Retail Library
 
 The models of the mounts and battle pets of later expansions, converted for the 3.3.5a client of
-an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,272 looks on 1,230 models,
+an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,600 looks on 1,383 models,
 every retail mount and pet look (retail 12.1.0, and 12.1.5 for the later mounts) that the
 converter can take and that a 3.3.5a client with an HD creature pack doesn't already have, and a
 few plain creature looks asked for by name (the five Primal Devilsaurs). The list was made
 against such a client; the census below makes one against yours.
 
-It also has the looks of 120 retail mounts whose model the client does have (the Swift Albino
-Raptor, the Primal Raptors' new textures on the stock raptor, the dragonriding drakes): the
-client has the model but no mount, so
+It also has the looks of 120 retail mounts and 299 retail pets whose model the client does have
+(the Swift Albino Raptor, the Primal Raptors' new textures on the stock raptor, the dragonriding
+drakes, Pebble, Withers): the client has the model but no such mount or pet, so
 [wow-mod-retail-collection](https://github.com/buildthehomelab/wow-mod-retail-collection) asks
 for them by name (its `data/wanted-looks.tsv`), and they are converted from retail like the rest.
 
@@ -54,11 +54,12 @@ pandas).
 - **Not every mount and pet.** Left out:
   - what the client already has (retail's own looks from before Cataclysm, and what the HD
     pack added);
-  - nine models the converter refuses (the Tauralus mounts, two Gladiator's Drakes and a few
-    more);
-  - four models and two looks that are in retail's tables but not in its live build yet;
-  - the dragonriding drakes and other looks that are not creature models;
-  - looks that need only new textures on a model the client has.
+  - the one model the converter refuses: `gnomeskeleton` (Detective Ray, Minimancer, Micromancer),
+    whose shared skeleton has other bones than its parent;
+  - five models and three textures that are in retail's tables but not in its live build yet
+    (the Stegodons and their calves, Shadowbound Storybook, Winterrrgl's Contraption, Markeet of
+    the Infinite, Autumn Dream Jumper's coat);
+  - looks that are not creature models, and pets whose only looks are dressed characters.
 
 ## Installing
 
@@ -145,6 +146,7 @@ Category: Collections
   companions can be added without another large download.
 - They come with their **effects**: flames, sparkles, smoke and trails, and glowing eyes and
   runes.
+- More than 300 more companions and mounts join them.
 
 ## Credits
 
