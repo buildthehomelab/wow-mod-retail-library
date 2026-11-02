@@ -3271,3 +3271,342 @@ display	retail_display	form	tier	model	name	hide
 247272	47272	creature	0	zandalaridevilsaur	Primal Devilsaur (green)	
 247273	47273	creature	0	zandalaridevilsaur	Primal Devilsaur (pale)	
 276972	76972	creature	0	zandalaridevilsaur	Primal Devilsaur (brown)	
+344705	144705	mount	0	bookmountdrust	Shadowbound Storybook	
+347424	147424	mount	0	deathwargmount	Stone-Carved Crusher	
+347639	147639	mount	0	dreadglidermount	Ashen Dreadglider	
+347446	147446	mount	0	fox2	Shadowpaw Wood Watcher	
+346160	146160	mount	0	murlocmount	Giant Grrloc	
+234411	34411	mount	0	skeletalraptormount	Reanimated Skeletal Raptor	
+348609	148609	mount	0	stegodonprimalmount	Attuned Ancient Stegodon	
+348610	148610	mount	0	stegodonprimalmount	Crackling Ancient Stegodon	
+348611	148611	mount	0	stegodonprimalmount	Rumbling Jungle Stegodon	
+348612	148612	mount	0	stegodonprimalmount	Thundering Primal Stegodon	
+349017	149017	mount	0	toadardenwealdmount	Autumn Dream Jumper	
+348727	148727	mount	0	winterbroom	Winterrrgl's Pine-Powered Candy Cane Contraption	
+261888	61888	pet	0	abyssal_illidan	Abyssius	
+248856	48856	pet	0	abyssal_outland	Netherspace Abyssal	
+245936	45936	pet	0	airelemental	Tiny Twister	
+246922	46922	pet	0	anubisath	Anubisath Idol	
+294706	94706	pet	0	anubisath	Void-Scarred Anubisath	
+345469	145469	pet	0	aqirflying	Aqir Razorwing	
+248857	48857	pet	0	arcanegolem	Menagerie Custodian	
+242735	42735	pet	0	arcticcondor	Dragonbone Hatchling	
+269047	69047	pet	0	arcticcondor	Gold Mini Jouster	
+269048	69048	pet	0	arcticcondor	Blue Mini Jouster	
+347631	147631	pet	0	arfuspet	Slayer's Faithful Tracker	
+239130	39130	pet	0	babyelekk	Meadowstomper Calf	
+261148	61148	pet	0	babyelekk	Trunks	
+304798	104798	pet	0	babyhawkstrider	Egbob	
+230507	30507	pet	0	babylich	Lil' K.T. / Landro's Lichling	
+319680	119680	pet	0	babynaga2	Zyg'ee	
+245953	45953	pet	0	basilisk_outland	Scalded Basilisk Hatchling	
+242523	42523	pet	0	battleguard	Qiraji Guardling	
+242412	42412	pet	0	bearcub	Darkshore Cub	
+265070	65070	pet	0	bearcub	Ashmaw Cub	
+279777	79777	pet	0	beholder	Cross Gazer	
+281079	81079	pet	0	birdsofprey	Corlain Falcon	
+347636	147636	pet	0	birdsofprey	Inquisitor's Messenger	
+242202	42202	pet	0	bogbeast	Tiny Bog Beast	
+274468	74468	pet	0	bogbeast	Everliving Spore	
+224751	24751	pet	0	bonegolem	Rattlejaw	
+275498	75498	pet	0	cannon	Pocket Cannon	
+241887	41887	pet	0	carrionbird	Fledgling Buzzard	
+274036	74036	pet	0	carrionbird	Albino Buzzard	
+274038	74038	pet	0	carrionbird	Foulfeather	
+216880	16880	pet	0	carrionbirdoutland	Squawkling	
+253610	53610	pet	0	chimeraoutland	Albino Chimaeraling	
+242575	42575	pet	0	clefthoove	Clefthoof Runt	
+258606	58606	pet	0	clefthoove	Leatherhide Runt	
+232031	32031	pet	0	clockworkgiantpet	Lil' XT / Landro's Lil' XT	
+246882	46882	pet	0	clockworkgnome_c	Clock'em	
+202177	2177	pet	0	cockroach	Undercity Cockroach / Cockroach / Roach / Irradiated Roach / Tainted Cockroach / Fire-Proof Roach / Locust / Nether Roach / Death's Head Cockroach	
+245897	45897	pet	0	cockroach	Deepholm Cockroach	
+245898	45898	pet	0	cockroach	Resilient Roach	
+288786	88786	pet	0	cockroach	Junkheap Roach	
+288788	88788	pet	0	cockroach	Junkheap Roach	
+288789	88789	pet	0	cockroach	Experimental Roach	
+288790	88790	pet	0	cockroach	Mechanical Cockroach	
+294886	94886	pet	0	cockroach	Void-Scarred Locust	
+320514	120514	pet	0	cockroach2	Cruncher	
+320515	120515	pet	0	cockroach2	Underroach	
+320516	120516	pet	0	cockroach2	Underroach	
+278161	78161	pet	0	compy	Child of Jani	
+258932	58932	pet	0	cow	Pygmy Cow	
+261898	61898	pet	0	crackelfmale	Wretched Servant	
+238638	38638	pet	0	cratecreature	Creepy Crate	
+242344	42344	pet	0	crawler	Ravager Hatchling	
+209758	9758	pet	0	cryptfiend	Crypt Fiend	
+200654	654	pet	0	deer	Fawn	
+237686	37686	pet	0	deer	Infected Fawn	
+248667	48667	pet	0	direwolf	Tito	
+276829	76829	pet	0	draeneifemalekid	Uuna	
+259034	59034	pet	0	draenorkaliri	Kaliri Hatchling	
+259602	59602	pet	0	draenorkaliri	Ikky	
+259603	59603	pet	0	draenorkaliri	Veilwatcher Hatchling	
+260617	60617	pet	0	draenorkaliri	Sunfire Kaliri	
+246905	46905	pet	0	dragonfootsoldier	Death Talon Whelpguard	
+248663	48663	pet	0	dragonhawk	Phoenix Hawk Hatchling	
+246903	46903	pet	0	dragonspawn	Untamed Hatchling	
+210095	10095	pet	0	dragonwhelp	Twilight Whelpling	
+242737	42737	pet	0	dragonwhelp	Scourged Whelpling	
+247635	47635	pet	0	dragonwhelp	Nexus Whelpling	
+294165	94165	pet	0	dragonwhelp	Ghostly Whelpling	
+307454	107454	pet	0	dragonwhelp3	Jeweled Onyx Whelpling	
+307455	107455	pet	0	dragonwhelp3	Jeweled Sapphire Whelpling	
+307456	107456	pet	0	dragonwhelp3	Jeweled Amber Whelpling	
+307457	107457	pet	0	dragonwhelp3	Jeweled Emerald Whelpling	
+307458	107458	pet	0	dragonwhelp3	Jeweled Ruby Whelpling	
+307463	107463	pet	0	dragonwhelp3	Spyragos	
+313200	113200	pet	0	dragonwhelp3	Rusziona	
+313202	113202	pet	0	dragonwhelp3	Belastrasza	
+313274	113274	pet	0	dragonwhelp3	Zhusadormu	
+313277	113277	pet	0	dragonwhelp3	Zalethgos	
+313281	113281	pet	0	dragonwhelp3	Posidriss	
+247636	47636	pet	0	dragonwhelpdarkshade	Infinite Whelpling	
+242745	42745	pet	0	dragonwhelponyxia	Spawn of Onyxia	
+318212	118212	pet	0	dragonwhelponyxia	Remembered Spawn	
+299476	99476	pet	0	dragonwhelpoutland2	Moon-Touched Netherwhelp	
+278261	78261	pet	0	drake	Ageless Bronze Drake	
+246925	46925	pet	0	drakeadon	Chrominius	
+245938	45938	pet	0	elementalearth	Grinder	
+245939	45939	pet	0	elementalearth	Lumpy	
+245940	45940	pet	0	elementalearth	Pebble	
+242335	42335	pet	0	ent2	Ruby Sapling	
+245943	45943	pet	0	ent2	Withers	
+287870	87870	pet	0	ent2	Aldrusian Sproutling	
+290140	90140	pet	0	ent2	Everburning Treant	
+240538	40538	pet	0	eyeofkilrog	Eye of the Legion	
+279638	79638	pet	0	facelessone	Faceless Minion	
+290142	90142	pet	0	facelessone	Zur'aj the Depleted	
+242467	42467	pet	0	faeriedragon_ghost	Nether Faerie Dragon	
+204732	4732	pet	0	felbat	Tirisfal Batling / Bat	
+265981	65981	pet	0	felbat	Echo Batling	
+265982	65982	pet	0	felbat	Hog-Nosed Bat	
+247848	47848	pet	0	felgolem	Sunreaver Micro-Sentry	
+261896	61896	pet	0	felgolem	Sunblade Micro-Defender	
+220042	20042	pet	0	fireflygreen	Firefly / Shrine Fly	
+228434	28434	pet	0	fireflygreen	Mei Li Sparkler	
+228435	28435	pet	0	fireflygreen	Tiny Flamefly	
+246000	46000	pet	0	fireflygreen	Effervescent Glowfly	
+246171	46171	pet	0	fireflygreen	Darkmoon Glowfly	
+260861	60861	pet	0	fireflygreen	Waterfly	
+260862	60862	pet	0	fireflygreen	Sapphire Firefly	
+260863	60863	pet	0	fireflygreen	Violet Firefly	
+260864	60864	pet	0	fireflygreen	Swamplighter Firefly	
+265237	65237	pet	0	fireflygreen	Shimmering Aquafly	
+290867	90867	pet	0	fireflygreen	Amberglow Stinger	
+294895	94895	pet	0	fireflygreen	Voidglower	
+242783	42783	pet	0	fleshbeast	Twilight Fiendling	
+295147	95147	pet	0	fleshbeast2	Wicked Lurker	
+295173	95173	pet	0	fleshbeast2	Reek	
+223057	23057	pet	0	flyingnerubian	Ziggy	
+288037	88037	pet	0	flyingnerubian	Voru'kar Leecher	
+287903	87903	pet	0	forceofnature	Ragepeep	
+246896	46896	pet	0	fungalmonster	Fungal Abomination	
+261884	61884	pet	0	gargoyle	Grotesque	
+245958	45958	pet	0	gazelle	Gazelle Fawn	
+245952	45952	pet	0	ghost	Lost of Lordaeron	
+265516	65516	pet	0	ghost	Tiny Apparition	
+273708	73708	pet	0	ghost	Wicked Soul	
+286088	86088	pet	0	giantsnake	Spawn of Merektha	
+286229	86229	pet	0	giantsnake	Guardian Cobra Hatchling	
+299888	99888	pet	0	giantvampirebat	Dusky Dredwing Pup	
+299889	99889	pet	0	giantvampirebat	Violet Dredwing Pup	
+299890	99890	pet	0	giantvampirebat	Crimson Dredwing Pup	
+299891	99891	pet	0	giantvampirebat	Stoneskin Dredwing Pup	
+245896	45896	pet	0	giraffe	Giraffe Calf	
+253502	53502	pet	0	gnollmelee	Hogs	
+318088	118088	pet	0	gnollmelee	Remembered Riverpaw	
+274484	74484	pet	0	gnomealertbot	Alarm-o-Bot	
+231623	31623	pet	0	gnomespidertank02	Mini Spider Tank	
+241886	41886	pet	0	golemharvest	Tiny Harvester	
+245555	45555	pet	0	golemharveststage2	Foe Reaper 0.9	
+221362	21362	pet	0	gorillapet	Bananas / Baby Ape	
+230412	30412	pet	0	gryphonpet	Gryphon Hatchling / Wildhammer Gryphon Hatchling	
+236332	36332	pet	0	gryphonpet	Wildhammer Gryphon Hatchling	
+236336	36336	pet	0	gryphonpet	Wildhammer Gryphon Hatchling	
+246936	46936	pet	0	harpy	Harpy Youngling	
+216943	16943	pet	0	hippogryphpet	Hippogryph Hatchling / Cenarion Hatchling	
+292162	92162	pet	0	hippogryphpet	Drowned Hatchling	
+248651	48651	pet	0	hydra	Gahz'rooki	
+261887	61887	pet	0	hydraoutland	Leviathan Hatchling	
+246003	46003	pet	0	infernal	Minfernal	
+273661	73661	pet	0	jormungarlarva	Dreadmaw	
+273662	73662	pet	0	jormungarlarva	Dreadmaw	
+288005	88005	pet	0	jormungarlarva	Bloodstone Tunneler	
+288006	88006	pet	0	jormungarlarva	Bloodstone Tunneler	
+314692	114692	pet	0	koboldmale	Chester	
+317603	117603	pet	0	koboldmale	Coppers	
+265274	65274	pet	0	larvaoutland	Ghost Maggot	
+238429	38429	pet	0	lasher	Crimson Lasher	
+249259	49259	pet	0	lionseal	Sea Calf	
+257803	57803	pet	0	lobstrokoutland	Zomstrok	
+299923	99923	pet	0	mawshade	Torghast Lurker	
+207920	7920	pet	0	mechanicalchicken	Mechanical Chicken / Robo-Chick	
+275331	75331	pet	0	mechanicalchicken	Iron Chick	
+275332	75332	pet	0	mechanicalchicken	OOX-35/MG	
+275333	75333	pet	0	mechanicalchicken	OOX-35/MG	
+275334	75334	pet	0	mechanicalchicken	OOX-35/MG / Lime Roboclucker	
+275337	75337	pet	0	mechanicalchicken	OOX-35/MG	
+286231	86231	pet	0	mechanicalchicken	Vengeful Chicken	
+273692	73692	pet	0	mimiron_legs	G0-R41-0N Ultratonk	
+242343	42343	pet	0	moth	Grey Moth	
+251292	51292	pet	0	moth	Vale Flitter	
+251301	51301	pet	0	moth	Flamering Moth	
+251740	51740	pet	0	moth	Skywisp Moth	
+251741	51741	pet	0	moth	Skywisp Moth	
+251742	51742	pet	0	moth	Ashwing Moth	
+260618	60618	pet	0	moth	Cerulean Moth	
+260888	60888	pet	0	moth	Crimsonwing Moth	
+260889	60889	pet	0	moth	Dusty Sporewing	
+260891	60891	pet	0	moth	Royal Moth	
+244551	44551	pet	0	mothpet	Imperial Moth	
+311309	111309	pet	0	mothunderlight	Hollow Moth	
+311899	111899	pet	0	mothunderlight	Hollow Moth	
+311900	111900	pet	0	mothunderlight	Hollow Moth	
+312195	112195	pet	0	mothunderlight	Heartseeker Moth	
+312196	112196	pet	0	mothunderlight	Undermoth	
+312201	112201	pet	0	mothunderlight	Teardrop Moth	
+312383	112383	pet	0	mothunderlight	Ebonwing Moth	
+287945	87945	pet	0	mountaingiant	Fozling	
+261900	61900	pet	0	naaru	K'ute	
+313666	113666	pet	0	nerubiancaster	N'Ruby	
+259766	59766	pet	0	nerubianspiderling	Nerubian Swarmer	
+316506	116506	pet	0	nerubianspiderling2	Arachnoid Hatchling	
+316508	116508	pet	0	nerubianspiderling2	Rak-Ush Threadling	
+316509	116509	pet	0	nerubianspiderling2	Chitin Burrower	
+245988	45988	pet	0	netherray	Fledgling Nether Ray	
+260909	60909	pet	0	netherray	Sky Fry	
+299114	99114	pet	0	northrendgeist	Putrid Geist	
+225390	25390	pet	0	northrendpenguin	Tundra Penguin	
+225391	25391	pet	0	northrendpenguin	Tundra Penguin	
+295141	95141	pet	0	obsidiandestroyer	Muar	
+206300	6300	pet	0	owl	Crested Owl	
+215905	15905	pet	0	owl	Jade Owl	
+238776	38776	pet	0	owl	Brilliant Kaliri	
+206189	6189	pet	0	parrot	Parrot	
+209554	9554	pet	0	parrot	Parrot	
+220995	20995	pet	0	parrot	Parrot	
+242509	42509	pet	0	parrot	Polly	
+326224	126224	pet	0	parrot	Void-Scarred Parrot	
+238455	38455	pet	0	polarbearcub	Hyjal Bear Cub	
+242229	42229	pet	0	polarbearcub	Infested Bear Cub	
+287895	87895	pet	0	polarbearcub	Scabby	
+226740	26740	pet	0	protodragon	Ironbound Proto-Whelp	
+246954	46954	pet	0	protodragon	Emerald Proto-Whelp	
+230298	30298	pet	0	pterrordax	Child of Pa'ku	
+246909	46909	pet	0	quirajprophet	Mini Mindslayer	
+242068	42068	pet	0	ram	Little Black Ram	
+238065	38065	pet	0	raptorpet	Lashtail Hatchling	
+265273	65273	pet	0	rat	Ghastly Rat	
+309987	109987	pet	0	revenant2_fire	Blaze Spirit	
+309371	109371	pet	0	revenant2_water	Echo of the Depths	
+309983	109983	pet	0	revenant2_water	Tide Spirit	
+309374	109374	pet	0	revenantair2	Echo of the Heights	
+309988	109988	pet	0	revenantair2	Gale Spirit	
+273671	73671	pet	0	revenantfire	Magma Rageling	
+242553	42553	pet	0	rockflayer	Flayer Youngling	
+242617	42617	pet	0	saberworg	Fjord Worg Pup	
+323482	123482	pet	0	saberworg	Specter	
+246900	46900	pet	0	salamandermale	Harbinger of Flame	
+205905	5905	pet	0	scorpion	Scorpid / Stripe-Tailed Scorpid / Leopard Scorpid / Crunchy Scorpion	
+215469	15469	pet	0	scorpion	Scorpid / Stripe-Tailed Scorpid / Leopard Scorpid / Crunchy Scorpion	
+215470	15470	pet	0	scorpion	Durotar Scorpion / Scorpid / Leopard Scorpid	
+215471	15471	pet	0	scorpion	Scorpid	
+236616	36616	pet	0	scorpion	Stripe-Tailed Scorpid / Leopard Scorpid / Crunchy Scorpion	
+236617	36617	pet	0	scorpion	Stripe-Tailed Scorpid / Crunchy Scorpion	
+241960	41960	pet	0	scorpion	Scorpling	
+249122	49122	pet	0	scorpion	Mechanical Scorpid	
+326226	126226	pet	0	scorpion	Void-Scarred Scorpid	
+248855	48855	pet	0	seagiant	Tideskipper	
+226846	26846	pet	0	serpent	Cavern Moccasin	
+274469	74469	pet	0	serpent	Cavern Moccasin	
+274470	74470	pet	0	serpent	Cavern Moccasin	
+274471	74471	pet	0	serpent	Cavern Moccasin	
+245917	45917	pet	0	shade	Restless Shadeling	
+265527	65527	pet	0	shoveltusk	Son of Goredome	
+242416	42416	pet	0	silithidtank	Silithid Hatchling	
+260975	60975	pet	0	skeletalserpent	Bone Serpent	
+216633	16633	pet	0	skunk	Stinker / Skunk / Mountain Skunk	
+222447	22447	pet	0	skunk	Highlands Skunk	
+246924	46924	pet	0	slime	Viscidus Globule	
+259352	59352	pet	0	slime	Netherspawn, Spawn of Netherspawn	
+201206	1206	pet	0	snake	Black Kingsnake / Snake / Adder	
+201986	1986	pet	0	snake	Water Snake / Moccasin / Adder	
+201987	1987	pet	0	snake	Water Snake / Rattlesnake / Adder	
+202954	2954	pet	0	snake	Water Snake / King Snake	
+202955	2955	pet	0	snake	Albino Snake / Temple Snake	
+202956	2956	pet	0	snake	Water Snake	
+202957	2957	pet	0	snake	Brown Snake / Snake / Grove Viper	
+202958	2958	pet	0	snake	Snake	
+203126	3126	pet	0	snake	Rat Snake	
+204268	4268	pet	0	snake	Ash Viper / Rock Viper	
+204343	4343	pet	0	snake	Tree Python	
+204440	4440	pet	0	snake	Zooey Snake	
+206303	6303	pet	0	snake	Crimson Snake / Snake	
+235802	35802	pet	0	snake	Ash Viper / Sidewinder / Grove Viper	
+235804	35804	pet	0	snake	Rattlesnake / Sidewinder	
+236544	36544	pet	0	snake	Rat Snake / Ash Viper / Rock Viper / Coral Adder	
+236578	36578	pet	0	snake	Tree Python / Emerald Boa	
+236580	36580	pet	0	snake	Coral Snake	
+243195	43195	pet	0	snake	Temple Snake	
+263674	63674	pet	0	snake	Slithering Brownscale	
+265457	65457	pet	0	snake	Rose Taipan	
+273663	73663	pet	0	snobold	Snobold Runt	
+338600	138600	pet	0	snowman2	Petite Snow Buddy	
+258169	58169	pet	0	spectralcat	Cursed Birman	
+259330	59330	pet	0	spectralcat	Widget the Departed	
+230409	30409	pet	0	spectraltigercub	Spectral Tiger Cub / Spectral Cub	
+299858	99858	pet	0	spider	Boneweave Hatchling	
+299859	99859	pet	0	spider	Skittering Venomspitter	
+299860	99860	pet	0	spider	Luminous Webspinner	
+299861	99861	pet	0	spider	Bleak Skitterer	
+299862	99862	pet	0	spider	Rosetipped Spiderling	
+299863	99863	pet	0	spider	Blushing Spiderling	
+299864	99864	pet	0	spider	Bloodfeaster Spiderling	
+259885	59885	pet	0	sporecreature	Zangar Spore	
+261547	61547	pet	0	sporecreature	Brilliant Spore	
+261548	61548	pet	0	sporecreature	Umbrafen Spore	
+261549	61549	pet	0	sporecreature	Crimson Spore	
+261550	61550	pet	0	sporecreature	Seaborne Spore	
+242554	42554	pet	0	sporeling	Sporeling Sprout	
+215381	15381	pet	0	steamtonk	Darkmoon Tonk	
+348626	148626	pet	0	stegodonprimalpet	Bump	
+348627	148627	pet	0	stegodonprimalpet	Lump	
+348628	148628	pet	0	stegodonprimalpet	Grump	
+348629	148629	pet	0	stegodonprimalpet	Frump	
+289742	89742	pet	0	thunderlizard	Thunder Lizard Runt	
+229819	29819	pet	0	tigergem	Onyx Panther / Sanctum Cub	
+242297	42297	pet	0	tigergem	Sapphire Cub	
+273675	73675	pet	0	tigergem	Sanctum Cub	
+238134	38134	pet	0	tripod	Legs	
+248661	48661	pet	0	tripod	Coilfang Stalker	
+245968	45968	pet	0	turkey	Plump Turkey / Turkey	
+245970	45970	pet	0	turkey	Highlands Turkey	
+242265	42265	pet	0	undead_eagle	Blighthawk	
+246921	46921	pet	0	undeadbeast	Stitched Pup	
+248668	48668	pet	0	voidcaller	Lesser Voidcaller	
+262466	62466	pet	0	voidterror	Chaos Pup	
+287871	87871	pet	0	voidwalker2	Voidwiggler	
+245998	45998	pet	0	warpstalker	Warpstalker Hatchling	
+278508	78508	pet	0	warpstalker	Warpstalker Runt	
+230159	30159	pet	0	waterelemental	Water Waveling	
+248666	48666	pet	0	waterelemental	Tainted Waveling	
+266155	66155	pet	0	waterelemental	Fetid Waveling	
+261891	61891	pet	0	wellofsoulsgrief	Fragment of Suffering	
+261890	61890	pet	0	wellofsoulspain	Fragment of Anger	
+261889	61889	pet	0	wellofsoulsseduction	Fragment of Desire	
+246937	46937	pet	0	wendigo2	Stunted Yeti	
+279795	79795	pet	0	wendigo2	Globe Yeti	
+349534	149534	pet	0	wickerbeastpet	Hex-Cursed Manifestation	
+240224	40224	pet	0	wisp	Hyjal Wisp	
+245820	45820	pet	0	wisp	Nordrassil Wisp	
+200855	855	pet	0	wolf	Moon Moon	
+201100	1100	pet	0	wolf	Faithful Dog	
+242708	42708	pet	0	woolyrhino	Stunted Shardhorn	
+248878	48878	pet	0	worgen	Lil' Bad Wolf	
+273696	73696	pet	0	yoggsarontentacle	Creeping Tentacle	
+273694	73694	pet	0	yoggsarontentaclemace	Creeping Tentacle	
+245987	45987	pet	0	yoggsarontentaclethin	Jade Tentacle	
+273695	73695	pet	0	yoggsarontentaclethin	Creeping Tentacle	
+217192	17192	pet	0	zippelin	Darkmoon Zeppelin	
