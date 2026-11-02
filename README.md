@@ -1,8 +1,8 @@
 # Retail Library
 
 The models of the mounts and battle pets of later expansions, converted for the 3.3.5a client of
-an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,600 looks on 1,383 models,
-every retail mount and pet look (retail 12.1.0, and 12.1.5 for the later mounts) that the
+an [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) server: 3,611 looks on 1,387 models,
+every retail mount and pet look (retail 12.1.0, 12.1.5 for the later mounts, and the 12.1.7 test build for 11 looks, below) that the
 converter can take and that a 3.3.5a client with an HD creature pack doesn't already have, and a
 few plain creature looks asked for by name (the five Primal Devilsaurs). The list was made
 against such a client; the census below makes one against yours.
@@ -56,10 +56,13 @@ pandas).
     pack added);
   - the one model the converter refuses: `gnomeskeleton` (Detective Ray, Minimancer, Micromancer),
     whose shared skeleton has other bones than its parent;
-  - five models and three textures that are in retail's tables but not in its live build yet
-    (the Stegodons and their calves, Shadowbound Storybook, Winterrrgl's Contraption, Markeet of
-    the Infinite, Autumn Dream Jumper's coat);
+  - Markeet of the Infinite, encrypted even in the 12.1.7 test build;
   - looks that are not creature models, and pets whose only looks are dressed characters.
+- **Eleven looks come from the 12.1.7 test build**, because retail's live build lacks their files:
+  the Stegodons and their calves, Shadowbound Storybook, Winterrrgl's Contraption and Autumn Dream
+  Jumper's coat. Retail can still change them before release. Build with
+  `RETAIL_FALLBACK_CACHE=<cache pinned to wowt>` (wow-mod-retail-creatures' `fetch.py`): every other
+  file still comes from the pinned live build.
 
 ## Installing
 

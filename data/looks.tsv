@@ -3271,11 +3271,18 @@ display	retail_display	form	tier	model	name	hide
 247272	47272	creature	0	zandalaridevilsaur	Primal Devilsaur (green)	
 247273	47273	creature	0	zandalaridevilsaur	Primal Devilsaur (pale)	
 276972	76972	creature	0	zandalaridevilsaur	Primal Devilsaur (brown)	
+344705	144705	mount	0	bookmountdrust	Shadowbound Storybook	
 347424	147424	mount	0	deathwargmount	Stone-Carved Crusher	
 347639	147639	mount	0	dreadglidermount	Ashen Dreadglider	
 347446	147446	mount	0	fox2	Shadowpaw Wood Watcher	
 346160	146160	mount	0	murlocmount	Giant Grrloc	
 234411	34411	mount	0	skeletalraptormount	Reanimated Skeletal Raptor	
+348609	148609	mount	0	stegodonprimalmount	Attuned Ancient Stegodon	
+348610	148610	mount	0	stegodonprimalmount	Crackling Ancient Stegodon	
+348611	148611	mount	0	stegodonprimalmount	Rumbling Jungle Stegodon	
+348612	148612	mount	0	stegodonprimalmount	Thundering Primal Stegodon	
+349017	149017	mount	0	toadardenwealdmount	Autumn Dream Jumper	
+348727	148727	mount	0	winterbroom	Winterrrgl's Pine-Powered Candy Cane Contraption	
 261888	61888	pet	0	abyssal_illidan	Abyssius	
 248856	48856	pet	0	abyssal_outland	Netherspace Abyssal	
 245936	45936	pet	0	airelemental	Tiny Twister	
@@ -3564,6 +3571,10 @@ display	retail_display	form	tier	model	name	hide
 261550	61550	pet	0	sporecreature	Seaborne Spore	
 242554	42554	pet	0	sporeling	Sporeling Sprout	
 215381	15381	pet	0	steamtonk	Darkmoon Tonk	
+348626	148626	pet	0	stegodonprimalpet	Bump	
+348627	148627	pet	0	stegodonprimalpet	Lump	
+348628	148628	pet	0	stegodonprimalpet	Grump	
+348629	148629	pet	0	stegodonprimalpet	Frump	
 289742	89742	pet	0	thunderlizard	Thunder Lizard Runt	
 229819	29819	pet	0	tigergem	Onyx Panther / Sanctum Cub	
 242297	42297	pet	0	tigergem	Sapphire Cub	
