@@ -46,9 +46,11 @@ pandas).
   - glows and shines that retail limits to the first texture's alpha (among them a common
     environment-map shine), which 3.3.5a can't draw as a pass of their own.
 - **No fourth skin texture.** 124 looks use one, and 3.3.5a's display rows have only three.
-- **No sounds and no footprints.** The rows carry none, so that hundreds of unlike models don't
-  all growl like the one stock creature they were cloned from. A module that turns a look into a
-  mount gives it its sound.
+- **Sounds are added after the build, and there are no footprints.** A build's rows carry neither,
+  so that hundreds of unlike models don't all growl like the one stock creature they were cloned
+  from. wow-mod-retail-creatures' `tools/look_sounds.py` then gives each look its retail sound
+  set, in `patch-z76-look-sounds.MPQ`. A rebuild of `patch-z75-retail-looks.MPQ` loses the
+  SoundIDs: run that tool again.
 - **Not every mount and pet.** Left out:
   - what the client already has (retail's own looks from before Cataclysm, and what the HD
     pack added);
@@ -79,6 +81,7 @@ two names work if the small one loads after every other patch that ships any of 
 |---|---|---|
 | `patch-z72-retail-library.MPQ` | the models and textures, under `Creature\RetailLibrary` | 2.5 GB |
 | `patch-z75-retail-looks.MPQ` | `CreatureDisplayInfo.dbc` and `CreatureModelData.dbc` with the looks' rows, and `ParticleColor.dbc` with their particle colours | under 1 MB |
+| `patch-z76-look-sounds.MPQ` | the looks' retail sound files and `CreatureSoundData.dbc` (from `look_sounds.py`) | 359 MB |
 
 The split is on purpose. A patch replaces whole files, so the small one has to be rebuilt on the
 client's current tables whenever another patch adds rows to them, and it has to load after every
